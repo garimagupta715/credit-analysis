@@ -1,5 +1,5 @@
 # credit-analysis
-credit api analysis 
+django Rest API implementation
 
 ## docker-compose run src sh -c "python manage.py test && flake8"
 
