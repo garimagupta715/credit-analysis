@@ -13,7 +13,7 @@ coverage:
         if_not_found: success
         if_ci_failed: error
     api:
-      paths: credit_analysis
+      paths: app
     patch:
       default:
         threshold: 1
@@ -29,14 +29,14 @@ comment:
 flags:
   frontend:
     paths:
-      - credit_analysis/
+      - app/
     assume: true
   api:
     paths:
-      - credit_analysis/
+      - app/
     assume: true
 ignore:
-  - credit_analysis/**/test/**/*.py
-  - credit_analysis/**/tests/**/*.py
-  - credit_analysis/**/test_*.py
-  - credit_analysis/**/migrations/**/*.py
+  - app/**/test/**/*.py
+  - app/**/tests/**/*.py
+  - app/**/test_*.py
+  - app/**/migrations/**/*.py
